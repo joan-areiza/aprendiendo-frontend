@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!-- Le dice al sistema que este es un archivo HTML -->
+<html lang"es"> <!-- Establece el lenguaje de la WEB en español --> <!-- Nota: falta el signo "=" entre lang y "es"; el navegador suele tolerarlo igual -->
+ 
+<head> <!-- No se mostrara en la pagina web lo que este dentro de esta etiqueta -->
+    <meta charset="UTF-8" /> <!-- Permite el manejo del idioma español -->
+    <meta name="viewport" content="width=device=width" , initial-scale="1.0"> <!-- Permite que la pagina web sea responsive --> <!-- Nota: initial-scale quedó fuera de las comillas del content, separado por una coma, lo que no sigue la sintaxis habitual -->
+    <title> HTML, CSS Y JS - ADSO - Conceptos WEB Bàsicos </title> <!-- Titulo en navegador -->
+    <link rel="stylesheet" href="/maquetacion/css/estilos.css" /> <!-- Vincula la hoja de estilos con la pagina web -->
+</head> <!-- Cierra la sección de metadatos -->
+ 
+<body> <!-- Abre la sección visible de la página -->
+    <h1> Contacto </h1><!-- Titulo -->
+    <h2> Introducciòn </h2> <!-- Subtitulo -->
+    <ul> <!-- Crea una lista desordenada -->
+        <li> <!-- Crea un item en la lista -->
+            <a href="\index.html">Inicio</a> <!-- Adiciona un enalce en el item para redirigirse a otra sitio --> <!-- Nota: usa una barra invertida "\" en la ruta en vez de la barra normal "/" que se usa en enlaces web -->
+        </li> <!-- Cierra el ítem de la lista -->
+        <li>
+            <a href="\html\contacto.html">Contacto</a> 
+        </li>
+    </ul> <!-- Cierra la lista desordenada -->
+    <h1>Tablas</h1> 
+    <table border="1"> <!-- Crea una tabla; el "border" le pone un borde visible a las celdas -->
+        <tr> <!-- Crea una fila en la tabla -->
+            <td>Nombres</td> <!-- Crea un columna en la fila de la tabla -->
+            <td>Apellidos</td> 
+            <td>Web</td>
+        </tr> <!-- Cierra la fila de la tabla -->
+        <tr> 
+            <td>Carlos</td> <!-- Dato de la columna Nombres -->
+            <td>Perez</td> 
+            <td>Web</td> 
+        </tr>
+        <tr> 
+            <td>Juan</td> 
+            <td>Castro</td> 
+            <td>Web</td> 
+        </tr>
+    </table> <!-- Cierra la tabla -->
+    <h1>Formularios</h1> 
+    <p>Formulario de contacto</p> <!-- Parrafo que describe la seccion -->
+ 
+    <form> <!-- Crea un formulario -->
+        <label>Nombre</label> <!-- Texto que indica que almacena el campo -->
+        <input type="text" /> <!-- Crea un campo en el cual se le puede introducir un tipo de dato -->
+        <br> <!-- Hace un salto de linea para que el elemento se ubique debajo del anterior elemento -->
+ 
+        <label>Apellido</label> 
+        <input type="text" /> 
+        <br> 
+ 
+        <label>Email</label> 
+        <input type="email" /> <!-- El type="email" hace que el campo valide que el texto ingresado tenga formato de correo electrónico, a diferencia de type="text" que acepta cualquier texto -->
+ 
+        <select> <!-- Crea una lista de opciones desplegable -->
+            <option value="Hombre">Hombre</option> <!-- Crea una opcion en la lista desplegable -->
+            <option value="Mujer">Mujer</option> 
+        </select> <!-- Cierra la lista desplegable -->
+ 
+        <input type="submit" value="Enviar" /> <!-- Envia el formulario --> <!-- El atributo value define el texto que se muestra dentro del botón -->
+ 
+    </form> <!-- Cierra el formulario -->
+</body> <!-- Se mostrara en la pagina lo que este dentro de esta etiqueta -->
+ 
+</html> <!-- Permite hacerle entender al sistema que se usara el lenguaje HMTL -->
+ 

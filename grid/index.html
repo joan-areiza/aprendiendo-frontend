@@ -1,0 +1,33 @@
+<!DOCTYPE html> <!-- Le dice al sistema que este es un archivo HTML -->
+<html lang="es"> <!-- Establece el lenguaje de la WEB en español -->
+
+<head> <!-- No se mostrara en la pagina web lo que este dentro de esta etiqueta -->
+    <meta charset="UTF-8"> <!-- Permite el manejo del idioma español --> <!-- El atributo charset define la codificación de caracteres del documento, aquí UTF-8 para soportar tildes y ñ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura cómo se ve la página en celulares y tablets --> <!-- width=device-width iguala el ancho de la página al de la pantalla e initial-scale=1.0 fija el zoom inicial -->
+    <link rel="stylesheet" type="text/css" href="/grid/css/style.css"/> <!-- Vincula la hoja de estilos con la pagina web --> <!-- rel="stylesheet" indica que es una hoja de estilos, type="text/css" el tipo de archivo y href la ruta -->
+    <title>Aprendiendo GRID ADSO</title> <!-- Titulo en navegador -->
+</head>
+
+<body> <!-- Se mostrara en la pagina lo que este dentro de esta etiqueta -->
+    <h1>Aprendiendo CSS GRID Layout ADSO</h1>  <!-- Titulo -->
+    <div class="grid-layout"> <!-- Crea una division --> <!-- class="grid-layout" permite aplicarle desde el CSS los estilos que convierten este div en una cuadrícula (grid) -->
+        <div class="caja c1"> <!-- El div tiene dos clases: "caja" da el estilo general y "c1" da el estilo y la posición específica de esta zona de la cuadrícula -->
+           CABECERA <!-- Texto que se muestra dentro de esta zona -->
+        </div> <!-- Cierra esta división de la cuadrícula -->
+        <div class="caja c2">
+            MENU
+        </div>
+        <div class="caja c3">
+           CONTENIDO 
+        </div>
+        <div class="caja c4">
+           BARRA LATERAL
+        </div>
+        <div class="caja c5">
+            FOOTER
+        </div>
+    
+    </div> <!-- Cierra el contenedor principal de la cuadrícula -->
+</body> <!-- Cierra la sección visible de la página -->
+
+</html> <!-- Permite hacerle entender al sistema que se usara el lenguaje HMTL -->

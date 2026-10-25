@@ -1,0 +1,17 @@
+:root{ /* :root selecciona el elemento raíz del documento; se usa para declarar variables CSS que estarán disponibles en todo el archivo */
+    --color--principal:green; /* Declara una variable personalizada llamada --color--principal con el valor "green"; los dos guiones al inicio son obligatorios para crear una variable CSS */
+    --fuente: Arial, Verdana; /* Declara una variable con una lista de fuentes: Arial como preferida y Verdana como alternativa */
+    --fuente-size: 35px; /* Declara una variable con el valor del tamaño de fuente, 35 píxeles */
+}
+h1{ /* Selector por etiqueta: aplica los siguientes estilos a todos los elementos h1 de la página */
+    color:var(--color--principal); /* La función var() toma el valor guardado en la variable --color--principal y lo usa como color del texto */
+    font-family: var(--fuente); /* Usa el valor de la variable --fuente como tipografía del texto */
+    font-size: var(--fuente-size); /* Usa el valor de la variable --fuente-size como tamaño del texto */
+}
+p{ /* Selector por etiqueta: aplica los estilos a todos los párrafos p */
+    color:var(--color--principal);
+font-family: var(--fuente);
+}
+a{ /* Selector por etiqueta: aplica los estilos a todos los enlaces a */
+    color:var(--color--principal);
+}

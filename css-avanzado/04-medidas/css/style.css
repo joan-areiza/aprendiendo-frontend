@@ -1,0 +1,28 @@
+html{ /* Selector por etiqueta: aplica el estilo al elemento raíz html, que sirve de referencia para las unidades rem */
+    font-size: 20px; /* Define el tamaño de fuente base del documento; este valor es el que usan las unidades "rem" como referencia */
+}
+
+.caja{ /* Selector de clase: aplica estos estilos a cualquier elemento con class="caja" */
+    font-size: 2rem; /* La unidad rem es relativa al font-size del elemento html; 2rem equivale a 2 veces ese tamaño base (2 x 20px = 40px) */
+    width: 25rem; /* Define el ancho del elemento usando rem, es decir 25 veces el tamaño base definido en html */
+    height: 25rem; /* Define el alto del elemento usando la misma unidad rem */
+
+    text-align: center; /* Centra el texto horizontalmente dentro del elemento */
+    background-color: aquamarine; /* Define el color de fondo del elemento */
+    border: 1px solid black; /* Borde de 1 píxel, línea sólida, color negro */
+}
+@media (max-width: 768px) { /* Media query: las reglas dentro de estas llaves solo se aplican cuando el ancho de la pantalla es de 768 píxeles o menos */
+  :root{ /* :root selecciona el elemento raíz del documento, usado aquí para redefinir el tamaño base según el ancho de pantalla */
+    font-size: 20px;
+  }
+}
+@media (max-width: 528px) {
+  :root{
+    font-size: 15px;
+  }
+}
+@media (max-width: 368px) {
+  :root{
+    font-size: 8px;
+  }
+}

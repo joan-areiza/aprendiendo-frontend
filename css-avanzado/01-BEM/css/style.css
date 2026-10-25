@@ -1,0 +1,93 @@
+/*
+BEM = Block Element Modifier
+
+Se usa siempre CLASS no ID
+
+Class = aplicar estilos a un elemento.
+ID = aplicar funcionalidad a un elemento.(javascript)
+
+.bloque
+.bloque__elemento
+.bloque__elemento--modificador 
+
+1.No usar ID
+2.No usar etiquetas
+3.Que todo sea un key selector (Seleccionar justo el elemento al cual se le daran estilos)
+
+*/
+/* Nota de documentación: el bloque de arriba es un comentario del autor original que explica en qué consiste la metodología BEM y sus reglas de nomenclatura; no es código, por eso el navegador lo ignora */
+/*BEM*/ /* Comentario corto del autor que marca el inicio de las reglas que siguen la metodología BEM */
+.cards{ /* Selector de clase: aplica los siguientes estilos a cualquier elemento con class="cards"; la llave abre el bloque de declaraciones */
+width: 400px; /* Fija el ancho del elemento en 400 píxeles */
+margin: 10px auto; /* Define el espacio exterior: 10px arriba y abajo, y "auto" centra el elemento horizontalmente */
+padding: 10px; /* Define el espacio interior entre el borde y el contenido, en los cuatro lados */
+border: 1px solid gray; /* Dibuja un borde de 1 píxel de grosor, línea sólida y color gris */
+box-shadow: 0px 0px 20px gray; /* Agrega una sombra: 0px de desplazamiento horizontal, 0px vertical, 20px de difuminado y color gris */
+border-radius: 5px; /* Redondea las esquinas del elemento 5 píxeles */
+}
+
+.cards__card{ /* Selector de clase para el elemento BEM "card" dentro del bloque "cards" */
+    font-family: 'Courier New', Courier, monospace; /* Define la tipografía del texto; si "Courier New" no está disponible usa "Courier", y si tampoco, cualquier fuente monoespaciada */
+    padding: 10px;
+    background-color: lightblue; /* Define el color de fondo del elemento, en este caso azul claro */
+    margin: 5px; /* Aquí margin lleva un solo valor, por lo que aplica el mismo espacio (5px) en los cuatro lados a la vez */
+}
+/*
+contexto
+
+*/
+/* Nota de documentación: los dos bloques de comentario de arriba ("contexto" y "clave") están vacíos, parecen notas o recordatorios que dejó el autor original mientras escribía el archivo */
+/*
+clave
+
+*/
+.card__title{ /* Selector de clase para el título de la tarjeta */
+    font-size: 24px; /* Define el tamaño del texto en 24 píxeles */
+    font-weight: bold; /* Pone el texto en negrita (más grueso) */
+}
+
+.card__link{ /* Selector de clase para el enlace de la tarjeta */
+    padding: 10px;
+    background-color: green;
+    color: white; /* Define el color del texto, en este caso blanco */
+    text-decoration: none; /* Quita el subrayado u otra decoración que traen los enlaces por defecto */
+}
+
+.card__link--rojo{ /* Selector de clase con modificador BEM "--rojo"; representa una variante en rojo del elemento card__link */
+    background-color: red;
+}
+
+/* Nota de documentación: el bloque de comentario que sigue contiene una versión antigua de estas reglas usando selectores por etiqueta combinados con clases en lugar de BEM; queda desactivado porque está dentro de un comentario, y ese comentario no se cierra correctamente antes del final del archivo, por lo que el resto del archivo también queda inactivo */
+/*Forma clasica
+.cards{width: 400px;
+margin: 10px auto;
+padding: 10px;
+border: 1px solid gray;
+box-shadow: 0px 0px 20px gray;
+border-radius: 5px;
+}
+
+.cards .card{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+    background-color: lightblue;
+    margin: 5px;
+}
+/*
+contexto
+
+*/
+/*
+clave
+
+.cards .card h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.cards .card a{
+    padding: 10px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+}/*

@@ -1,0 +1,57 @@
+body { /* Selector por etiqueta: aplica los estilos a todo el elemento body de la página */
+    /* Aplica estilos a todo el contenido visible de la página */
+    background-color: beige; /* Color de fondo verde muy claro para toda la página */
+}
+
+.flex-container { /* Selector de clase: aplica los estilos a cualquier elemento con class="flex-container" */
+    border: 1px solid black; /* Le pone un borde negro delgado alrededor de todo el contenedor */
+    background: #ccc; /* Color de fondo verde muy claro para toda la página */
+    padding: 20px; /* Espacio interior alrededor del contenido, para que no quede pegado al borde */
+    display: flex; /* Activa el modelo de caja flexible (Flexbox), lo que permite organizar los elementos hijos en fila o columna de forma flexible */
+    flex-flow: row wrap; /* Propiedad abreviada que combina dirección y ajuste de línea: "row" coloca los elementos en fila horizontal y "wrap" hace que pasen a la siguiente línea si no caben todos */
+    justify-content: center; /* Centra los elementos hijos de forma horizontal dentro del contenedor */
+    align-content: center; /* Centra las líneas de elementos de forma vertical cuando hay más de una fila */
+    width: 80%; /* Ocupa todo el ancho disponible del contenedor */
+    height: 600px; /* Altura fija del encabezado */
+    margin: 0 auto; /* Sin espacio exterior */
+}
+
+.caja {
+    border: 1px solid rgb(70, 70, 70); /* Borde de 1 píxel sólido; rgb(70, 70, 70) define un color gris oscuro específico mezclando rojo, verde y azul */
+    background-color: white; /* Define el color de fondo en blanco */
+    color: black;  /* Color oscuro para el texto de los artículos */
+    font-family: 'Courier New', Courier, monospace; /* Tipo de letra que se usará en todo el texto */
+    font-weight: bold; /* Pone el texto en negrita */
+    width: 200px; /* Define el ancho fijo de la caja en 200 píxeles */
+    line-height: 200px; /* Iguala la altura de línea al alto del footer para centrar el texto verticalmente */
+    text-align: center; /* Centra el texto horizontalmente */
+    margin: 5px; /* Espacio exterior alrededor de cada enlace, para separarlos */
+    overflow: hidden; /* Oculta cualquier contenido que se salga de los límites de la caja */
+}
+
+.c1 {
+    background: lightblue; /* Color de fondo específico de esta caja */
+    order: 4; /* Propiedad de Flexbox que define el orden de aparición del elemento dentro del contenedor; un número más alto lo mueve más hacia el final */
+    flex-grow: 5; /* Permite que el elemento crezca para ocupar espacio extra disponible dentro del contenedor flexible; el número indica el factor de crecimiento respecto a los demás elementos */
+    flex-basis: 50%; /* Define el tamaño inicial del elemento, antes de repartir el espacio sobrante, en este caso el 50% del contenedor */
+}
+
+.c2 {
+    background: lightcoral;
+    order: 3;
+    flex-grow: 5;
+}
+
+.c3 {
+    background: lightgreen;
+    order: 2;
+    flex-grow: 5;
+   
+}
+
+.c4 {
+    background: lightpink;
+    order: 1;
+    flex-grow: 5;
+    
+}

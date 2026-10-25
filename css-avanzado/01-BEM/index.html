@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!-- Le dice al navegador que este archivo es un documento HTML5, esto debe ir siempre en la primera línea -->
+<html lang="es"> <!-- Abre el documento HTML; el atributo lang="es" indica que el idioma del contenido es español -->
+<head> <!-- Abre la sección de metadatos, aquí va información que no se ve directamente en la página -->
+    <meta charset="UTF-8"> <!-- La etiqueta meta da información sobre el documento; charset="UTF-8" define la codificación de caracteres para que tildes y ñ se vean bien -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Este meta controla cómo se ve la página en dispositivos móviles; width=device-width ajusta el ancho al de la pantalla y initial-scale=1.0 fija el zoom inicial -->
+    <link rel="stylesheet" href="/css-avanzado/01-BEM/css/style.css"> <!-- La etiqueta link conecta un archivo externo; rel="stylesheet" indica que es una hoja de estilos y href señala la ruta del archivo CSS -->
+    <title>BEM en CSS</title> <!-- Define el texto que aparece en la pestaña del navegador -->
+</head> <!-- Cierra la sección de metadatos -->
+<body> <!-- Abre la sección visible de la página, aquí va todo el contenido que el usuario ve -->
+    <h1>Metodología BEM en CSS</h1> <!-- h1 es el encabezado principal, el título más importante de la página -->
+    <section class="cards"> <!-- section agrupa contenido relacionado; class="cards" es el nombre del bloque en BEM, se usa para aplicarle estilos desde el CSS -->
+        <article class="cards__card"> <!-- article representa un bloque de contenido independiente (una tarjeta); cards__card es un elemento BEM (doble guion bajo) que pertenece al bloque cards -->
+            <h3 class="card__title">Tarjeta 1</h3> <!-- h3 es un encabezado de nivel 3 usado para el título de la tarjeta; cards__title es el elemento BEM que da estilo a ese título -->
+            <p class="card__content">Contenido Tarjeta 1</p> <!-- p es un párrafo de texto; cards__content es el elemento BEM que da estilo al texto del contenido -->
+            <a href="#" class="card__link">senaadso.com</a> <!-- a crea un enlace; href="#" es un enlace temporal que apunta a la misma página; cards__link es el elemento BEM que da estilo al enlace -->
+        </article> <!-- Cierra la tarjeta (article) -->
+
+        <article class="cards__card">
+            <h3 class="card__title">Tarjeta 2</h3>
+            <p class="card__content">Contenido Tarjeta 2</p>
+            <a href="#" class="card__link card__link--rojo">senaadso.com</a> <!-- cards__link--rojo agrega un modificador BEM (doble guion medio); un modificador cambia una variante del elemento, en este caso pinta el enlace de color rojo -->
+        </article>
+
+        <article class="cards__card">
+            <h3 class="card__title">Tarjeta 3</h3>
+            <p class="card__content">Contenido Tarjeta 3</p>
+            <a href="#" class="card__link">senaadso.com</a>
+        </article>
+
+        <article class="cards__card">
+            <h3 class="card__title">Tarjeta 4</h3>
+            <p class="card__content">Contenido Tarjeta 4</p>
+            <a href="#" class="card__link">senaadso.com</a>
+        </article>
+
+
+    </section> <!-- Cierra la sección que agrupa todas las tarjetas -->
+    <!--
+    Este bloque completo está comentado, por lo que el navegador no lo muestra; corresponde a una versión anterior de las tarjetas usando la clase "card" en vez de la metodología BEM
+    <section class="cards">
+      <div class="card">
+        <h2>Tarjeta 1</h2>
+        <p>Contenido Tarjeta 1.</p>
+        <a href="#">SENAADSOWEB.COM</a>
+      </div>
+      <div class="card">
+        <h2>Tarjeta 2</h2>
+        <p>Contenido Tarjeta 1.</p>
+        <a href="#">SENAADSOWEB.COM</a>
+      </div>
+      <div class="card">
+        <h2>Tarjeta 3</h2>
+        <p>Contenido Tarjeta 1.</p>
+        <a href="#">SENAADSOWEB.COM</a>
+      </div>
+      <div class="card">
+        <h2>Tarjeta 4</h2>
+        <p>Contenido Tarjeta 1.</p>
+        <a href="#">SENAADSOWEB.COM</a>
+      </div>
+    </section>
+    -->
+   
+    
+  </body> <!-- Cierra la sección visible de la página -->
+</html> <!-- Cierra el documento HTML -->

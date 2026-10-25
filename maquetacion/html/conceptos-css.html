@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- Le dice al sistema que este es un archivo HTML -->
+<html lang"es"> <!-- Establece el lenguaje de la WEB en español --> <!-- Nota: falta el signo "=" entre lang y "es"; el navegador suele tolerarlo igual -->
+ 
+<head> <!-- No se mostrara en la pagina web lo que este dentro de esta etiqueta -->
+    <meta charset="UTF-8" /> <!-- Permite el manejo del idioma español -->
+    <meta name="viewport" content="width=device=width" , initial-scale="1.0"> <!-- Permite que la pagina web sea responsive --> <!-- Nota: initial-scale quedó fuera de las comillas del content, separado por una coma, lo que no sigue la sintaxis habitual -->
+    <title> HTML, CSS Y JS - ADSO - Conceptos WEB Bàsicos </title> <!-- Titulo en navegador -->
+    <link rel="stylesheet" href="/maquetacion/css/estilos.css" /> <!-- Vincula la hoja de estilos con la pagina web -->
+</head> <!-- Cierra la sección de metadatos -->
+ 
+<body> <!-- Abre la sección visible de la página -->
+ 
+    <div id="container"> <!-- Crea un contenedor que alamecna diferentes elementos --> <!-- El atributo id le da un identificador único al div, distinto de "class" porque un id solo puede usarse una vez por página -->
+ 
+        <header><!-- Encabezado de la pagina web -->
+            <h1> CSS - ADSO - SENA </h1><!-- Titulo -->
+            
+        </header> <!-- Cierra el encabezado -->
+ 
+        <nav> <!-- Permite definir una seccion navegable en la pagina web -->
+            <ul><!-- Crea una lista desordenada -->
+                <li> <!-- Crea un item en la lista -->
+                    <a href="\index.html">Inicio</a> <!-- Adiciona un enalce en el item para redirigirse a otra sitio --> <!-- Nota: la ruta usa una barra invertida "\" en vez de la barra normal "/" que se usa en enlaces web -->
+                </li> <!-- Cierra el ítem de la lista -->
+                <li> 
+                    <a href="\html\contacto.html">Contacto</a> 
+                </li>
+                <li> 
+                    <a href="\html\conceptos-css.html">CSS</a> 
+                </li>
+                <li> 
+                    <a href="\html\blog.html">Blog</a> 
+                </li>
+            </ul> <!-- Cierra la lista desordenada -->
+        </nav> <!-- Cierra la sección de navegación -->
+ 
+        <div class="clearfix"></div> <!-- Limpia los elementos flotantes anteriores (nav) para que no se encimen con lo siguiente --> <!-- Aquí el div usa el atributo "class" en vez de "id"; una class sí se puede repetir en varios elementos de la página -->
+ 
+        <section id="content"> <!-- Crea una seccion -->
+ 
+            <article class="article"> <!-- Agrupa el contenido de la seccion -->
+                <h2>Titulo del articulo</h2> <!-- Subtitulo -->
+                <p>Texto del articulo</p><!-- Parrafo -->
+            </article> <!-- Cierra el artículo -->
+            <article class="article"> 
+                <h2>Titulo del articulo</h2> 
+                <p>Texto del articulo</p> 
+            </article>
+            <article class="article"> 
+                <h2>Titulo del articulo</h2>
+                <p>Texto del articulo</p> 
+            </article>
+            <article claPss="article"> <!-- Nota: el atributo está mal escrito ("claPss" en vez de "class"), por lo que el navegador no lo reconoce como una clase y este artículo no recibe el estilo de la clase "article" -->
+                <h2>Titulo del articulo</h2> 
+                <p>Texto del articulo</p> 
+            </article>
+ 
+        </section> <!-- Cierra la sección de contenido -->
+ 
+        <aside><!-- Marca el contenido adicional -->
+            <h2>Barra lateral</h2> 
+            <form><!-- Crea un formulario -->
+                <input type="text"> <!-- Crea un campo en el cual se le puede introducir un tipo de dato -->
+                <input type="submit" value="Buscar"> <!-- Envia el formulario --> <!-- El atributo value define el texto que se muestra dentro del botón -->
+            </form> <!-- Cierra el formulario -->
+        </aside> <!-- Cierra la barra lateral -->
+ 
+        <div class="clearfix"></div> 
+ 
+        <footer><!-- Pie de pagina -->
+            SENA - ADSO - 2026 <!-- Texto que se muestra en el pie de la pagina -->
+        </footer> <!-- Cierra el pie de página -->
+ 
+    </div> <!-- Cierra el contenedor principal abierto al inicio del body -->
+ 
+</body> <!-- Se mostrara en la pagina lo que este dentro de esta etiqueta -->
+ 
+</html> <!-- Permite hacerle entender al sistema que se usara el lenguaje HMTL -->
+ 

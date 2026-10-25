@@ -1,0 +1,49 @@
+body {  /* Aplica estilos a todo el contenido visible de la página */
+    background-color: antiquewhite; /* Color de fondo verde muy claro para toda la página */
+    font-family: Arial, Helvetica, sans-serif;  /* Tipo de letra que se usará en todo el texto */
+    text-align: center; /* Centra el texto (el título h1) horizontalmente */
+}
+
+.grid-layout {
+    height: 650px; /* Altura fija del layout */
+    display: grid; /* Activa el modelo de diseño de cuadrícula (CSS Grid), que permite ubicar los elementos hijos en filas y columnas */
+    grid-template-areas: 'cabecera cabecera' /* Define nombres para cada zona de la cuadrícula; cada palabra entre comillas representa una celda, formando visualmente las filas y columnas del diseño */
+        'menu menu'
+        'contenido lateral'
+        'footer footer';
+        grid-template-rows: 20% 10% auto 10%; /* Define la altura de cada fila de la cuadrícula: 20%, 10%, automática (según el contenido) y 10% */
+    background-color: lightgreen;
+    border: 1px solid black; /* Le pone un borde negro delgado alrededor de todo el contenedor */
+}
+
+.caja {
+    border: 4px solid black;
+    background-color: lightgray;
+    text-align: center;
+    padding: 20px; /* Espacio interior alrededor del contenido, para que no quede pegado al borde */
+}
+
+.c1 {
+    grid-area: cabecera; /* Asigna este elemento al área de la cuadrícula llamada "cabecera", definida antes en grid-template-areas */
+    background-color: lightskyblue;
+}
+
+.c2 {
+    grid-area: menu;
+    background-color: lightpink;
+}
+
+.c3 {
+    grid-area: contenido;
+    background-color: lightsalmon;
+}
+
+.c4 {
+    grid-area: lateral;
+    background-color: lightseagreen;
+}
+
+.c5 {
+    grid-area: footer;
+    background-color: lightgray;
+}

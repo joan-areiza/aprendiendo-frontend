@@ -1,0 +1,91 @@
+* { /* El asterisco (*) selecciona TODOS los elementos de la página */
+  margin: 0px;    /* Quita el espacio exterior que traen por defecto los elementos */
+  padding: 0px;   /* Quita el espacio interior que traen por defecto los elementos */
+}
+
+body { /* Aplica estilos a todo el contenido visible de la página */
+  background: #E8F5E9;                         /* Color de fondo verde muy claro para toda la página */
+  font-family: Arial, Helvetica, sans-serif;    /* Tipo de letra que se usará en todo el texto */
+}
+
+#container { /* Contenedor Principal */ /* El símbolo # indica un selector por id: aplica solo al elemento cuyo atributo id sea "container" */
+  width: 1100px;          /* Ancho fijo del contenedor principal */
+  margin: 0px auto;       /* El "auto" centra el contenedor horizontalmente en la pantalla */
+  border: 1px solid black;/* Le pone un borde negro delgado alrededor de todo el contenedor */
+}
+
+img { /* Imàgenes */
+  width: 150px;  
+}
+
+header { /* Encabezado */
+  background: #377e3c;        
+  height: 100px;                /* Altura fija del encabezado */
+  width: 100%;                  
+  margin: 0px;                  
+  text-align: center;           /* Centra el texto (el título h1) horizontalmente */
+  line-height: 100px;           /* Iguala la altura de línea al alto del header para centrar el texto verticalmente */
+  color: #1B262C;               /* Color oscuro para el texto del título */
+  border-bottom: 3px dashed black; /* Línea punteada negra en la parte inferior del header */
+}
+
+nav { /* Menù de navegaciòn */
+  background: #66BB6A;          
+  height: 50px;                  
+  border-bottom: 1px solid black;/* Línea sólida negra debajo del menú */
+}
+
+nav ul li {  /* Estilos para cada <li> dentro del <ul> que está dentro de <nav> */
+  float: left;          /* Pone los elementos de la lista uno al lado del otro (en fila) en vez de uno debajo del otro */
+  list-style: none;      /* Quita el puntito o viñeta que traen las listas por defecto */
+  margin: 10px;           
+  line-height: 30px;      
+}
+
+.clearfix { /* Clase para limpiar floats */ /* El punto (.) indica un selector por clase: aplica a cualquier elemento que tenga class="clearfix" */
+  clear: both; /* "Limpia" los elementos flotantes (float) anteriores para que no se encimen con lo siguiente */
+}
+
+#content { /* Secciòn de contenido */
+  float: left;              
+  width: calc(80% - 80px);   /* Ocupa el 80% del ancho, restando el padding para que no se desborde */
+  min-height: 500px;          /* Altura mínima, aunque haya poco contenido */
+  background: #A5D6A7;        
+  padding: 40px;               
+}
+
+.article { /* Artìculos */
+  color: #1B262C;                
+  margin-top: 15px;                /* Espacio arriba de cada artículo */
+  margin-bottom: 15px;              /* Espacio abajo de cada artículo */
+  padding-bottom: 10px;              /* Espacio interior abajo, antes de la línea separadora */
+  border-bottom: 1px solid #eee;      
+}
+
+.article:first-child { /* Estilos que se aplican SOLO al primer artículo de la lista */
+  padding-top: 10px;             /* Espacio interior arriba del primer artículo */
+  border-top: 1px solid #eee;     /* Línea gris arriba, para que también tenga separador por encima */
+}
+
+.article h2 {  /* Estilos para los títulos <h2> que están dentro de cada artículo */
+  font-size: 25px; /* Tamaño de letra más grande para destacar el título del artículo */
+}
+
+aside { /* Barra lateral */
+  float: left;                 
+  width: calc(20% - 20px);     
+  background: #66BB6A;          
+  min-height: 500px;             
+  padding-left: 10px;             /* Espacio interior a la izquierda */
+  padding-right: 10px;             /* Espacio interior a la derecha */
+  padding-top: 20px;                
+  padding-bottom: 10px;              
+}
+
+footer { /* Pie de pàgina */
+  background: black;    
+  color: white;          
+  text-align: center;      
+  height: 50px;              
+  line-height: 50px;          
+}

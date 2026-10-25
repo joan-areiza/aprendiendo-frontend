@@ -1,0 +1,14 @@
+.caja{ /* Selector de clase: aplica estos estilos a cualquier elemento con class="caja" */
+    font-family: 'Courier New', Courier, monospace; /* Define la tipografía del texto, con fuentes alternativas si la primera no está disponible */
+    box-sizing: border-box; /* Cambia la forma en que se calcula el tamaño del elemento: el padding y el borde se incluyen dentro del width y height indicados, en vez de sumarse aparte */
+    width: 300px; /* Define el ancho del elemento en 300 píxeles */
+    height: 180px; /* Define el alto del elemento en 180 píxeles */
+    margin: 30px auto; /* Espacio exterior: 30px arriba y abajo, y "auto" centra el elemento horizontalmente */
+    padding: 50px; /* Espacio interior entre el borde y el contenido, en los cuatro lados */
+    border: 1px solid gray; /* Borde de 1 píxel, línea sólida, color gris */
+    border-radius: 10px; /* Redondea las esquinas del elemento 10 píxeles */
+    box-shadow: 0px 0px 10px gray; /* Sombra sin desplazamiento horizontal ni vertical, con 10px de difuminado y color gris */
+    text-align: center; /* Centra el texto de forma horizontal dentro del elemento */
+    background-color: cadetblue; /* Define el color de fondo del elemento */
+    color: white; /* Define el color del texto */
+}
